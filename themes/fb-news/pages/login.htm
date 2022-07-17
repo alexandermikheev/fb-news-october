@@ -1,0 +1,67 @@
+title = "login"
+url = "/"
+layout = "login"
+is_hidden = 0
+
+[account]
+redirect = "home"
+paramCode = "code"
+activationPage = "login"
+forceSecure = 0
+requirePassword = 0
+
+[session]
+security = "all"
+redirect = "home"
+==
+<body>
+    <div class="container">
+        <div class="logo__img">
+
+            <div class="sladeshow_container">
+                    <div class="mySlides fade">
+                        <div class="nubertext">1/3</div>
+                        <img src="{{ '/assets/images/Franklins-burger.jpg'|theme }}" style="width: 100%; height: 100vh;">
+                    </div>
+                
+
+                <div class="sladeshow_container">
+                    <div class="mySlides fade">
+                        <div class="nubertext">2/3</div>
+                        <img src="{{ '/assets/images/fb.jpg'|theme }}" style="width: 100%; height: 100vh;">
+                    </div>
+                </div>
+
+                <div class="sladeshow_container">
+                    <div class="mySlides fade">
+                        <div class="nubertext">3/3</div>
+                        <img src="{{ '/assets/images/fb2.jpg'|theme }}" style="width: 100%; height: 100vh;">
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+            </div>
+        </div>
+        <div class="form-login">
+            <div class="brand"></div>
+            <div class="login-title">
+                <h1>Добро пожаловать</h1>
+                <span>Пожалуйста, введите логин и пароль, для авторазации</span>
+                <div class="login">
+                    <div class="login-info">
+                        <span>Франклинс Бургер Корпоративный</span>
+                        <span>Сотрудники, менеджеры и офис</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-login">
+                            <h3></h3>
+                            {% partial 'signin'%}
+                        </div>
+                    </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

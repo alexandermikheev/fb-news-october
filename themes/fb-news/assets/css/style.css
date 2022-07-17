@@ -1,0 +1,241 @@
+@font-face {
+    font-family:'Exo', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family:'Exo', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family:'Lato', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+    font-style: normal;
+    font-weight: normal;
+}
+html{
+    font-family:'Exo', sans-serif;
+    font-style: normal;
+
+}
+body{
+    margin: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.hide{
+    display: none;
+}
+.topbar{
+    display: flex;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+.toolbar__brand{
+    margin-right: 36px;
+    width: 450px;
+    height: 50px;
+    background-image: url(../images/brand-desctop.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    align-items: center;
+}
+.logo{
+    width: 100%;
+    height: 110px;
+}
+.topbar__inner{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.topbar__form{
+    display: flex;
+    font-size: 16px;
+    width: 100%;
+    color: #000000;
+    border: 0;
+    box-sizing: border-box;
+    align-items: flex-end;
+    max-width: 640px;
+}
+.search-form__input{
+    width: 100%;
+    height: 35px;
+    border: 1px solid #7a7a7a;
+    box-sizing: border-box;
+}
+
+.search-form__button{
+    height: 35px;
+    width: 80px;
+    border: none;
+    background-color: #000000;
+    border-radius:0  6px 6px 0px;
+    padding: 0;
+
+}
+
+.search-form__svg{
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+}
+.topbar__links {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    align-items: center;
+    padding-top: 15px;
+}
+.topbar__links a, .user__hi{
+    margin-left: 50px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.news-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+
+.news__head{
+    display: flex;
+    padding-left: 35px;
+    font-size: 28px;
+    font-size: 14px;
+}
+.news_link{
+    font-weight: bold;
+    font-size: 14px;
+}
+.news__naw a{
+    text-decoration: none;
+    color: #000;
+}
+.news__naw{
+    display: flex;   
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: space-evenly;
+}
+.news__naw li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.conainer{
+    max-width: 1350px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card{
+    width: 22%;
+    padding: 20px;
+
+}
+.card-logo{
+    width: 300px;
+    height: 200px;
+    box-sizing: border-box;
+    display: block;
+    overflow:hidden;
+}
+.card-img{
+    width: 100%;
+    height: auto;
+}
+.card-info{
+    display: flex;    
+    flex-direction: column;
+
+}
+.card-info a {
+    text-decoration: none;
+
+}
+.card__head{
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+}
+.card__txt{
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+}
+.card__stat__item{
+    padding-top: 14px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+.caed__stat__item i{
+    color: #000000;
+}
+.fa-eye{
+    font-family: "Font Awesome 5 Free";
+}
+.fa-eye:before{
+    content: "\f06e";
+}
+.fa-comment{
+    font-family: "Font Awesome 5 Free";
+}
+.fa-comment::before{
+    content: "\f4ad";
+}
+
+.post{
+    margin-top: 20px;
+}
+.data{
+    font-size: 13px;
+    color: rgb(150, 150, 150);
+}
+.container__footer{
+    margin: auto;
+    max-width: 1350px;
+    height: 50px;
+    background-color: #000;
+}
+.footer__info{
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer_copy{
+    padding-top: 20px ;
+}
+/*Странчки постов*/
+.section_post{
+    border-left: 1px solid #7a7a7a;
+    border-right: 1px solid #7a7a7a;
+}
+.section{
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+.section_post{
+    line-height: 1;
+    font-size: 20px;
+    font-style: normal;
+}

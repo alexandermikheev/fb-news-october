@@ -1,0 +1,158 @@
+@font-face {
+    font-family:'Exo', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family:'Exo', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family:'Lato', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+    font-style: normal;
+    font-weight: normal;
+}
+html{
+    font-family:'Exo', sans-serif;
+    font-style: normal;
+
+}
+body{
+    margin: 0;
+}
+.container{
+    display: flex;
+}
+.brand{
+    width: 100%;
+    height: 110px;
+    background-image: url(../images/brand-desctop.svg);
+    background-repeat: no-repeat;
+
+
+}
+.logo__img{
+    min-width: 960px;
+    height: 100vh;
+}
+.form-login{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.form-login{
+    display: flex;
+    flex-direction: column;
+}
+.login{
+    width: 570px;
+
+    background-color: #f4f4f4;
+    padding-bottom: 50px;
+}
+.login-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: rgb(94, 94, 94);
+    padding-left: 76px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.login-button{
+    width: 433px;
+    height: 52px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.login-button:hover{
+    background-color: #6b6b6b;
+    color: #fff;
+}
+
+.login-input{
+    width: 380px;
+    height: 52px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.sladeshow_container{
+    max-width: 1000px;
+    position: relative;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next{
+    right: 0;
+    border-radius:  3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav__dot{
+    position: absolute;
+    bottom: 20px;
+    
+}
+.dot{
+    cursor: pointer;
+    height: 13px;
+    width: 30px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-right: 5px;
+    background-color: #f4f4f4;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.nubertext{
+    position: absolute;
+    color: #fff;
+}
+@-webkit-keyframes fade{
+    from{opacity: 1.4;}
+    to{opacity: 1;}
+}
+@keyframes fade{
+    from{opacity: 1.4;}
+    to{opacity: 1;}
+}

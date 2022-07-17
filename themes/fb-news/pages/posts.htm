@@ -1,0 +1,47 @@
+title = "Post"
+url = "/homepage/:slug"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "login"
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog/category"
+
+[commentsPost]
+==
+<?php
+function onEnd()
+   {
+       if (!$this->post)
+           return App::make('Cms\Classes\Controller')->setStatusCode(404)->run('/404');
+   }
+?>
+==
+<section class="section">
+   <div class="container">
+      <div class="section_header">
+         <h2 class="section_title">{{ post.title }}</h2>
+         <div class="section_post">
+            {% if post.featured_images|length %}
+            <div class="featured-images text-center">
+               {% for image in post.featured_images %}
+               <div class="section_img">
+                  <img
+                     data-src="{{ image.filename }}"
+                     src="{{ image.path }}"
+                     alt="{{ image.description }}"
+                     style="max-width: 100%" />
+               </div>
+               {% endfor %}
+            </div>
+            {% endif %}
+            {{ post.content_html|raw}}
+         </div>
+      </div>
+   </div>
+   {% component 'commentsPost' %}
+</section>

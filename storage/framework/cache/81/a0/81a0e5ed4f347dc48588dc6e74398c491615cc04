@@ -1,0 +1,60 @@
+1658091572a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:1604:"title = "Franklins"
+url = "/homepage"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "login"
+==
+<main>
+        <div class="conainer">
+        <div class="news">
+            <div class="news__head">
+                <h2>Лента публикаций</h2>
+            </div>
+            <ol class="news__naw">
+              <li class="news_link"><a href="#" data-filter="Операционные">Операционные новости</a></li>
+              <li class="news_link"><a href="#" data-filter="Обучение">Обучение</a></li>
+              <li class="news_link"><a href="#" data-filter="IT">IT</a></li>
+              <li class="news_link"><a href="#" data-filter="Персонал">Персонал</a></li>
+              <li class="news_link"><a href="#" data-filter="Закупки">Закупки и поставки</a></li>
+              <li class="news_link"><a href="#" data-filter="Маркетинг">Маркетинг</a></li>
+              <li class="news_link"><a href="#" data-filter="Инвентаризация">Инвентаризация</a></li>
+              <li class="news_link"><a href="#" data-filter="Бухгалтерия">Бухгалтерия</a></li>
+
+              <li class="news_link"><a href="#" data-filter="Общее">Общее</a></li>
+            </ol>
+            <div class="news-cards">
+                
+                {% partial 'news'%}
+ 
+            </div><!---...///newscard....-->
+        </div><!---...///news....-->
+    </div> <!---...///Comtainer....-->
+    </main>";s:5:"mtime";i:1658084702;s:6:"markup";s:1473:"<main>
+        <div class="conainer">
+        <div class="news">
+            <div class="news__head">
+                <h2>Лента публикаций</h2>
+            </div>
+            <ol class="news__naw">
+              <li class="news_link"><a href="#" data-filter="Операционные">Операционные новости</a></li>
+              <li class="news_link"><a href="#" data-filter="Обучение">Обучение</a></li>
+              <li class="news_link"><a href="#" data-filter="IT">IT</a></li>
+              <li class="news_link"><a href="#" data-filter="Персонал">Персонал</a></li>
+              <li class="news_link"><a href="#" data-filter="Закупки">Закупки и поставки</a></li>
+              <li class="news_link"><a href="#" data-filter="Маркетинг">Маркетинг</a></li>
+              <li class="news_link"><a href="#" data-filter="Инвентаризация">Инвентаризация</a></li>
+              <li class="news_link"><a href="#" data-filter="Бухгалтерия">Бухгалтерия</a></li>
+
+              <li class="news_link"><a href="#" data-filter="Общее">Общее</a></li>
+            </ol>
+            <div class="news-cards">
+                
+                {% partial 'news'%}
+ 
+            </div><!---...///newscard....-->
+        </div><!---...///news....-->
+    </div> <!---...///Comtainer....-->
+    </main>";s:4:"code";N;s:5:"title";s:9:"Franklins";s:3:"url";s:9:"/homepage";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:5:"login";}}}

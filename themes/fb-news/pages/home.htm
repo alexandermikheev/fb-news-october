@@ -1,0 +1,35 @@
+title = "Franklins"
+url = "/homepage"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "login"
+==
+<main>
+        <div class="conainer">
+        <div class="news">
+            <div class="news__head">
+                <h2>Лента публикаций</h2>
+            </div>
+            <ol class="news__naw">
+              <li class="news_link"><a href="#" data-filter="Операционные">Операционные новости</a></li>
+              <li class="news_link"><a href="#" data-filter="Обучение">Обучение</a></li>
+              <li class="news_link"><a href="#" data-filter="IT">IT</a></li>
+              <li class="news_link"><a href="#" data-filter="Персонал">Персонал</a></li>
+              <li class="news_link"><a href="#" data-filter="Закупки">Закупки и поставки</a></li>
+              <li class="news_link"><a href="#" data-filter="Маркетинг">Маркетинг</a></li>
+              <li class="news_link"><a href="#" data-filter="Инвентаризация">Инвентаризация</a></li>
+              <li class="news_link"><a href="#" data-filter="Бухгалтерия">Бухгалтерия</a></li>
+
+              <li class="news_link"><a href="#" data-filter="Общее">Общее</a></li>
+            </ol>
+            <div class="news-cards">
+                
+                {% partial 'news'%}
+ 
+            </div><!---...///newscard....-->
+        </div><!---...///news....-->
+    </div> <!---...///Comtainer....-->
+    </main>

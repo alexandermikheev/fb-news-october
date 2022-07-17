@@ -1,0 +1,74 @@
+1658091572a:1:{s:9:"posts.htm";a:12:{s:8:"fileName";s:9:"posts.htm";s:7:"content";s:1215:"title = "Post"
+url = "/homepage/:slug"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "login"
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog/category"
+
+[commentsPost]
+==
+<?php
+function onEnd()
+   {
+       if (!$this->post)
+           return App::make('Cms\Classes\Controller')->setStatusCode(404)->run('/404');
+   }
+?>
+==
+<section class="section">
+   <div class="container">
+      <div class="section_header">
+         <h2 class="section_title">{{ post.title }}</h2>
+         <div class="section_post">
+            {% if post.featured_images|length %}
+            <div class="featured-images text-center">
+               {% for image in post.featured_images %}
+               <div class="section_img">
+                  <img
+                     data-src="{{ image.filename }}"
+                     src="{{ image.path }}"
+                     alt="{{ image.description }}"
+                     style="max-width: 100%" />
+               </div>
+               {% endfor %}
+            </div>
+            {% endif %}
+            {{ post.content_html|raw}}
+         </div>
+      </div>
+   </div>
+   {% component 'commentsPost' %}
+</section>";s:5:"mtime";i:1658085542;s:6:"markup";s:837:"<section class="section">
+   <div class="container">
+      <div class="section_header">
+         <h2 class="section_title">{{ post.title }}</h2>
+         <div class="section_post">
+            {% if post.featured_images|length %}
+            <div class="featured-images text-center">
+               {% for image in post.featured_images %}
+               <div class="section_img">
+                  <img
+                     data-src="{{ image.filename }}"
+                     src="{{ image.path }}"
+                     alt="{{ image.description }}"
+                     style="max-width: 100%" />
+               </div>
+               {% endfor %}
+            </div>
+            {% endif %}
+            {{ post.content_html|raw}}
+         </div>
+      </div>
+   </div>
+   {% component 'commentsPost' %}
+</section>";s:4:"code";s:143:"function onEnd()
+   {
+       if (!$this->post)
+           return App::make('Cms\Classes\Controller')->setStatusCode(404)->run('/404');
+   }";s:5:"title";s:4:"Post";s:3:"url";s:15:"/homepage/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:5:"login";}s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:13:"blog/category";}s:12:"commentsPost";a:0:{}}}
